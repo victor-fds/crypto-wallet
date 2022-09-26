@@ -1,15 +1,15 @@
 package com.challenge.crypto.wallet.model;
 
-import java.math.BigDecimal;
-
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Generated;
+import lombok.Setter;
 
-@Generated
 @Data
+@AllArgsConstructor
 public class Crypto {
 	private String symbol;
-	private double quantity;
-	private BigDecimal buyPrice;
-	private BigDecimal updatedPrice;
+	private Double quantity;
+	private Double buyPrice;
+	private Double updatedPrice;
 }

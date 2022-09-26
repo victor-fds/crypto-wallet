@@ -38,6 +38,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20220924</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -55,6 +60,14 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
+		<resources>
+	        <resource>
+	            <directory>src/main/resources</directory>
+	            <includes>
+	                <include>**/*.csv</include>
+	            </includes>
+	        </resource>
+		</resources>
 	</build>
-
 </project>
